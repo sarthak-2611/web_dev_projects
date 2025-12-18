@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarthak Singh - Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card-container">
+        <!-- Card Header -->
+        <div class="card-header">
+            <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/853b0707-a408-4672-887b-8426965242b0"
+                 alt="Sarthak Singh"
+                 class="profile-image">
+            <h1 class="profile-name">Sarthak Singh</h1>
+            <p class="profile-title">ECE Undergraduate | Developer</p>
+        </div>
+
+        <!-- Card Body -->
+        <div class="card-body">
+            <!-- Branch & Institution Info -->
+            <div class="info-section">
+                <h3 class="section-title">Education</h3>
+                <div class="branch-info">
+                    <table>
+                        <tr>
+                            <td>Branch</td>
+                            <td>Electronics &amp; Communication Engineering</td>
+                        </tr>
+                        <tr>
+                            <td>Institution</td>
+                            <td>LNMIIT</td>
+                        </tr>
+                        <tr>
+                            <td>Level</td>
+                            <td>Undergraduate</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="info-section">
+                <h3 class="section-title">Skills</h3>
+                <ul class="skills-list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>AI</li>
+                </ul>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/sarthak-singh-b58278377/" title="LinkedIn" target="_blank">in</a>
+                <a href="https://github.com/sarthak-2611" title="GitHub" target="_blank">gh</a>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3 class="section-title">Get In Touch</h3>
+                <form onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                    </div>
+
+                    <div class="button-container">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <button type="reset" class="btn btn-secondary">Clear</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
